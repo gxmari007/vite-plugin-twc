@@ -1,20 +1,15 @@
-# template-lib
+# vite-plugin-tws
 
-Template for library.
+Tailwindcss plugin for vite.
 
-## Usage
-
-### GitHub template
-
-[Create a repo form this template.](https://github.com/gxmari007/template-lib/generate)
-
-### Clone to local
+## Install
 
 ```bash
-npx degit git@github.com:gxmari007/template-lib.git project-name
+npm install vite-plugin-tws --save-dev
+# or
+yarn add vite-plugin-tws --dev
 ```
 
-### Todos
+## Lisence
 
-- [ ] Rename `name` field in `package.json`
-- [ ] Clean up the README.md
+MIT
