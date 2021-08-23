@@ -1,4 +1,4 @@
-# vite-plugin-tws
+# vite-plugin-twc
 
 Tailwindcss plugin for vite.
 
