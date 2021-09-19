@@ -7,14 +7,22 @@
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
-    "lint": "eslint src",
+    "dev": "npm run build -- --watch src",
     "build": "tsup src/index.ts --dts --format esm,cjs",
+    "example:vue-dev": "pnpm run dev --filter vue",
+    "example:vue-build": "pnpm run build --filter vue",
+    "lint": "eslint src",
     "prepublishOnly": "npm run build",
     "release": "standard-version",
     "prepare": "husky install"
   },
   "files": [
-    "dist"
+    "dist",
+    "config"
+  ],
+  "keywords": [
+    "tailwindcss",
+    "vite-plugin"
   ],
   "config": {
     "commitizen": {
@@ -26,22 +34,26 @@
       "posttag": "git push --follow-tags origin master && npm publish"
     }
   },
+  "dependencies": {
+    "defu": "^5.0.0"
+  },
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
-    "@typescript-eslint/eslint-plugin": "^4.29.2",
-    "@typescript-eslint/parser": "^4.29.2",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@types/node": "^16.9.2",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.1",
-    "husky": "^7.0.1",
-    "prettier": "^2.3.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "prettier": "^2.4.1",
     "rollup": "^2.56.3",
     "standard-version": "^9.3.1",
-    "tsup": "^4.14.0",
-    "typescript": "^4.3.5",
-    "vite": "^2.5.0"
+    "tsup": "^5.1.0",
+    "typescript": "^4.4.3",
+    "vite": "^2.5.10"
   },
   "peerDependencies": {
     "vite": "^2.5.0"
