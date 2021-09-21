@@ -3,5 +3,12 @@ import vue from '@vitejs/plugin-vue';
 import tailwindcss from 'vite-plugin-twc';
 
 export default defineConfig({
-  plugins: [vue(), tailwindcss()],
+  plugins: [
+    vue(),
+    tailwindcss({
+      config: {
+        mode: 'jit',
+      },
+    }),
+  ],
 });

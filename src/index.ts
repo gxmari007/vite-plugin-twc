@@ -1,1 +1,1 @@
-export { plugin as default } from './plugin';
+export { tailwindcssPlugin as default } from './tailwindcss';
