@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-twc",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Tailwindcss plugin for vite",
   "author": "James Gao",
   "main": "dist/index.js",
