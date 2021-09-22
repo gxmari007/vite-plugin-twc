@@ -1,6 +1,7 @@
 # vite-plugin-twc
 
-![npm](https://img.shields.io/npm/v/vite-plugin-twc)
+[![npm](https://img.shields.io/npm/v/vite-plugin-twc)](https://www.npmjs.com/package/vite-plugin-twc)
+[![GitHub](https://img.shields.io/github/license/gxmari007/vite-plugin-twc)](https://github.com/gxmari007/vite-plugin-twc/blob/main/LICENSE)
 
 Use tailwindcss with zero configuration in vite.
 
