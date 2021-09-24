@@ -15,11 +15,12 @@ export function tailwindcssViewerPlugin(options: Options): Plugin {
     apply: 'serve',
     configureServer(server) {
       if (options.viewer) {
+        const path = '/_tailwind/';
         const viewerServer = createServer({
           tailwindConfigProvider: () => options.config,
         }).asMiddleware();
 
-        server.middlewares.use('/_tailwind/', viewerServer);
+        server.middlewares.use(path, viewerServer);
       }
     },
   };

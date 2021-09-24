@@ -28,6 +28,22 @@ export default defineConfig({
 });
 ```
 
+### Just-in-Time Mode
+
+Enable it in the tailwind configuration, `tailwind.config.js` or plugin config. 
+
+```js
+export default defineConfig({
+  plugins: [
+    tailwindcss({
+      config: {
+        mode: 'jit',
+      },
+    }),
+  ],
+});
+```
+
 ## Options
 
 ### `cssPath`
